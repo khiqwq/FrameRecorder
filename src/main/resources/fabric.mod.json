@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "framerecorder",
+  "version": "${version}",
+  "name": "Frame Recorder",
+  "description": "Records per-second frame times, frame limiter state, GC pauses and position while in a world, and samples the render thread stack on frames that take 50 ms or longer.",
+  "authors": ["khiqwq"],
+  "contact": { "sources": "https://github.com/khiqwq/FrameRecorder", "issues": "https://github.com/khiqwq/FrameRecorder/issues" },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["io.github.khiqwq.framerecorder.FrameRecorderMod"] },
+  "mixins": ["framerecorder.mixins.json"],
+  "depends": { "fabricloader": ">=0.18.0", "minecraft": "1.21.11", "java": ">=21", "fabric-api": "*" }
+}
